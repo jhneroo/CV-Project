@@ -1,0 +1,45 @@
+* {
+    margin: 5%;
+}
+
+h1 {
+    color: darkslategray;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 100;
+    text-align: center;
+}
+
+p {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 20;
+    text-align: left;
+}
+
+.container {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+}
+
+.container2 {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    flex: 1; /* Each item will take equal space */
+    margin: 10px; /* Adds some space between items */
+    background-color: white;
+    text-align: center;
+    padding: 20px; 
+}
+
+.item2 {
+    flex: 1; /* Each item will take equal space */
+    margin: 10px; /* Adds some space between items */
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px;
+}
+

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="outer-container">
+    <div class="main-container">
+        <div>
+            <a href="/" class="button is-text">&lt; return to main menu</a>
+        </div>
+            <h1 class="title">Write any number:</h1>
+        <div style="padding: 1.5rem;">
+            <canvas id="canvas" width="200" height="200"></canvas>
+        </div>
+        
+        <div>
+            <form style="padding: 1.5rem;" id="practice-form" action="/recognize" method="POST">
+                <input id="pixels" name="pixels" type="hidden" />
+                <input id="letter" name="letter" type="hidden" value="{{letter}}" />
+                <button type="button" class="button is-success">Recognize my Number</button>
+                <button type="button" class="button is-info">Clear</button>
+            </form>
+        </div>
+    </div>
+</div>  
+
+    <script>
+        $(document).ready(function() {
+            startCanvas()
+        })
+    </script>
+
+{% endblock %}
