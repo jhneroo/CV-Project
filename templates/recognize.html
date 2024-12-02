@@ -10,13 +10,13 @@
         <div style="padding: 1.5rem;">
             <canvas id="canvas" width="200" height="200"></canvas>
         </div>
-        
+        <div id="prediction-output"></div>
         <div>
             <form style="padding: 1.5rem;" id="practice-form" action="/recognize" method="POST">
                 <input id="pixels" name="pixels" type="hidden" />
                 <input id="letter" name="letter" type="hidden" value="{{letter}}" />
-                <button type="button" class="button is-success">Recognize my Number</button>
-                <button type="button" class="button is-info">Clear</button>
+                <button type="button" class="button is-success" onClick="regAction()">Recognize my Number</button>
+                <button type="button" class="button is-info" onClick="resetCanvas()">Clear</button>
             </form>
         </div>
     </div>
@@ -24,7 +24,7 @@
 
     <script>
         $(document).ready(function() {
-            startCanvas()
+            startCanvas();
         })
     </script>
 
